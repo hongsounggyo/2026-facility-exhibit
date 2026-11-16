@@ -15,44 +15,63 @@
   </header>
   <main class="wrap">
     <article id="automation" aria-labelledby="automation-title">
+      <p class="label">에너지 · 자동제어</p>
       <h2 id="automation-title">설비 자동제어 시스템 자체 구현</h2>
-      <p class="summary">미래시설 TF는 기존 하니웰 설비 자동제어 시스템의 급탕·난방 기능을 자체 시스템으로 전환했습니다. 기존에는 운전 데이터를 확보하려면 설치 업체의 지원이 필요했고, AI 분석에 필요한 데이터를 수집하기 어려웠습니다.</p>
+      <p class="summary">미래시설 TF는 기존 하니웰 설비 자동제어 시스템의 급탕(HX-3)·난방(HX-2) 및 팬코일 유닛(FCU) 제어를 자체 시스템으로 전환했습니다. 기존에는 운전 데이터를 확보하려면 설치 업체의 지원이 필요해 AI 분석에 필요한 데이터를 자유롭게 수집하기 어려웠습니다.</p>
       <div class="screens">
         <figure>
           <a href="hot-water.jpg"><img src="hot-water.jpg" alt="급탕 배관 계통도에 표시된 공급·환수 온도와 밸브·펌프 상태" loading="lazy"></a>
-          <figcaption>급탕 운전 화면</figcaption>
+          <figcaption>급탕 계통(HX-3) 운전 화면</figcaption>
         </figure>
         <figure>
           <a href="heating.jpg"><img src="heating.jpg" alt="난방 배관 계통도에 표시된 목표 온도와 밸브·펌프 상태" loading="lazy"></a>
-          <figcaption>난방 운전 화면</figcaption>
+          <figcaption>난방 계통(HX-2) 운전 화면</figcaption>
         </figure>
       </div>
       <dl>
         <div class="step">
-          <dt>에너지 · 운전 데이터 수집과 효율 개선 기반 마련</dt>
-          <dd>급탕·난방의 공급·환수 온도, 펌프 운전 상태와 밸브 개도를 확인하고 기록할 수 있도록 구현했습니다. 앞으로 냉방·난방·급탕 등 에너지 사용이 많은 설비의 운전 패턴을 AI로 분석해 운전 조건을 개선할 지점을 찾을 계획입니다.</dd>
+          <dt>에너지 · 운전 데이터 수집과 효율 개선(ESG) 기반 마련</dt>
+          <dd>급탕(HX-3)·난방(HX-2)의 공급·환수 온도, 밸브 명령과 실제 개도, 펌프 운전 상태, 1·2층 팬코일 유닛(FCU 8대)의 가동 상태를 실시간 확인하고 기록하도록 구현했습니다. 축적한 데이터를 바탕으로 냉·난방과 급탕 등 에너지 사용이 많은 설비의 운전 패턴을 AI로 분석해 운전 조건을 최적화할 계획입니다.</dd>
         </div>
         <div class="step">
-          <dt>소스코드를 활용한 유지보수</dt>
-          <dd>소스코드를 확보해 시스템 구성과 제어 로직을 내부에서 확인할 수 있게 됐습니다. 담당자는 AI의 도움으로 제어 동작을 파악하고, 유지보수에 필요한 수정 지점을 찾을 수 있습니다.</dd>
+          <dt>소스코드를 활용한 유지보수 자립</dt>
+          <dd>제어 프로그램과 관제 화면 소스코드를 내부에서 직접 보유해 시스템 구성과 제어 로직을 투명하게 확인할 수 있게 됐습니다. 담당자는 AI의 도움으로 제어 동작을 빠르게 파악하고 유지보수 수정 지점을 즉시 반영할 수 있습니다.</dd>
         </div>
         <div class="step">
-          <dt>컨트롤러 구입비 50만 원 미만</dt>
-          <dd>컨트롤러를 구입하고 제어 프로그램과 운영 화면은 자체 제작했습니다.</dd>
+          <dt>컨트롤러 구입비 50만 원 미만으로 구축</dt>
+          <dd>외산 고가 제어기 대신 범용 컨트롤러를 도입하고 제어 로직과 운영 화면을 자체 제작해 비용을 대폭 절감했습니다. 추후 냉수순환·저수조·고가수조 감시 기능도 단계적으로 연동할 수 있는 구조로 설계했습니다.</dd>
         </div>
       </dl>
       <div class="screens supplement">
         <figure>
           <a href="overview.jpg"><img src="overview.jpg" alt="급탕·난방 등 주요 설비의 운전 현황을 요약한 화면" loading="lazy"></a>
-          <figcaption>통합 운전 현황</figcaption>
+          <figcaption>통합 운전 현황 (FCU · 급탕 · 난방 및 확장 영역)</figcaption>
         </figure>
         <figure>
           <a href="fcu.jpg"><img src="fcu.jpg" alt="층과 구역별로 팬코일 유닛 8대의 운전 상태를 보여주는 화면" loading="lazy"></a>
-          <figcaption>구역별 팬코일 유닛(FCU) 운전 화면</figcaption>
+          <figcaption>구역별 팬코일 유닛(FCU 8대) 운전 화면</figcaption>
         </figure>
       </div>
+
+      <nav class="bottom-nav" aria-label="다른 성과 보기">
+        <div class="bottom-nav-head">
+          <strong>다른 성과 둘러보기</strong>
+          <a href="projects.html">← 전체 성과 목록</a>
+        </div>
+        <div class="bottom-nav-list">
+          <a href="robot.html">사족보행 로봇</a>
+          <a href="automation.html" aria-current="page">설비 자동제어</a>
+          <a href="fire-monitoring.html">옥외 화재 감시</a>
+          <a href="network.html">네트워크 관리 시스템</a>
+          <a href="streetlight.html">가로등 고장 감시</a>
+          <a href="torch.html">횃불 감시</a>
+          <a href="access.html">출입감시</a>
+          <a href="inspection-server.html">로봇 시설물 점검 서버</a>
+        </div>
+      </nav>
     </article>
   </main>
   <footer><div class="wrap">2026년 미래시설 TF 성과 전시회</div></footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

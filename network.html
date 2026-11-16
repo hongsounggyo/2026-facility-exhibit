@@ -17,7 +17,7 @@
     <article id="network" aria-labelledby="network-title">
       <p class="label">인프라</p>
       <h2 id="network-title">네트워크 관리 시스템(NMS)<br>자체 개발</h2>
-      <p class="summary">CCTV, 자동제어, 스위치 등 공원 곳곳의 광통신망 장비를 한 화면에서 관리하는 시스템을 만들었습니다. 그동안은 장비 위치와 연결 구조를 담당자의 기억과 문서에 의존했습니다. 이제는 장비 304대의 위치와 상태를 실시간으로 확인할 수 있습니다.</p>
+      <p class="summary">CCTV, 자동제어, 스위치 등 공원 곳곳의 광통신망 장비를 한 화면에서 관리하는 시스템을 자체 개발했습니다. 그동안 담당자의 기억과 문서에 의존하던 장비 위치와 연결 구조를 시각화해, 현재 장비 304대의 위치와 상태를 실시간으로 확인할 수 있습니다.</p>
       <div class="screens">
         <figure>
           <a href="network-map.jpg"><img src="network-map.jpg" alt="올림픽공원 도면 위에 스위치 위치와 상태를 표시한 전체 맵 화면" loading="lazy"></a>
@@ -31,39 +31,57 @@
       <dl>
         <div class="step">
           <dt>공원 도면 위에서 장비 위치 확인</dt>
-          <dd>올림픽공원 도면 위에 스위치를 실제 위치대로 배치했습니다. 구역별로 장비 수와 상태를 바로 볼 수 있습니다.</dd>
+          <dd>올림픽공원 도면 위에 스위치·제어기·카메라·NVR 등 장비를 실제 위치대로 배치했습니다. 구역별로 장비 수와 정상·경고·장애 상태를 바로 볼 수 있습니다.</dd>
         </div>
         <div class="step">
           <dt>토폴로지로 연결 구조 파악</dt>
-          <dd>코어 스위치에서 현장 스위치까지 연결 구조를 그대로 보여줍니다. 한 곳이 끊기면 영향받는 하위 장비를 바로 알 수 있습니다.</dd>
+          <dd>코어 스위치에서 현장 스위치까지 연결 구조를 계층별로 그대로 보여줍니다. 한 구간이 끊기면 영향받는 하위 장비를 즉시 식별할 수 있습니다.</dd>
         </div>
         <div class="step">
           <dt>실시간 장애 감시와 이벤트 기록</dt>
-          <dd>장비 상태를 정상 · 경고 · 장애로 나눠 표시합니다. 장애와 복구 시각은 이벤트 로그에 자동으로 남습니다.</dd>
+          <dd>장비 상태를 정상·경고·장애로 나눠 표시하며, 장애 발생과 복구 시각은 이벤트 로그에 자동으로 누적 기록됩니다.</dd>
         </div>
         <div class="step">
-          <dt>SNMP로 포트 · 연결 정보 자동 수집</dt>
-          <dd>스위치에서 포트 상태와 MAC 주소를 자동으로 수집합니다. 어느 포트에 어떤 장비가 물려 있는지 분석해, 장애가 나면 원인 구간을 빠르게 좁힐 수 있습니다.</dd>
+          <dt>SNMP로 포트·연결 정보 자동 수집</dt>
+          <dd>스위치에서 포트 상태와 MAC 주소를 자동으로 수집합니다. 어느 포트에 어떤 장비가 연결돼 있는지 분석해 장애가 나면 원인 구간을 빠르게 좁힙니다.</dd>
         </div>
         <div class="step">
           <dt>IP 대역 스캔과 일괄 등록</dt>
-          <dd>IP 대역을 스캔해 응답하는 장비를 찾고, MAC 주소를 자동으로 조회해 한 번에 등록합니다. 수작업 대장 정리가 줄었습니다.</dd>
+          <dd>IP 대역을 스캔해 응답하는 장비를 찾고, MAC 주소를 자동 조회해 일괄 등록함으로써 수작업 대장 정리 부담을 크게 줄였습니다.</dd>
         </div>
         <div class="step">
           <dt>여러 PC에서 같은 정보 공유</dt>
-          <dd>장비 정보와 배치 위치를 서버에 저장합니다. 어느 PC에서 열어도 같은 화면을 봅니다.</dd>
+          <dd>장비 정보와 배치 위치를 서버에 저장해 어느 관리 PC에서 접속해도 동일한 최신 화면과 토폴로지를 공유합니다.</dd>
         </div>
         <div class="step">
           <dt>상용 솔루션 없이 AI로 자체 구현</dt>
-          <dd>생성형 AI의 도움으로 시스템을 직접 만들었습니다. 소스코드를 보유하고 있어 현장 요구에 맞게 바로 고칠 수 있습니다.</dd>
+          <dd>생성형 AI를 활용해 상용 NMS 도입 비용 없이 시스템을 직접 구축했습니다. 소스코드를 보유하고 있어 현장 요구에 맞춰 기능을 즉시 확장·개선할 수 있습니다.</dd>
         </div>
         <div class="step">
           <dt>향후 계획</dt>
-          <dd>포트 정보가 아직 수집되지 않은 스위치까지 수집 범위를 넓히고, 장애 이력을 분석해 반복 고장 구간을 찾을 예정입니다.</dd>
+          <dd>포트 정보가 아직 수집되지 않은 스위치까지 수집 범위를 넓히고, 누적 장애 이력을 AI로 분석해 반복 고장 구간을 사전에 찾아낼 예정입니다.</dd>
         </div>
       </dl>
+
+      <nav class="bottom-nav" aria-label="다른 성과 보기">
+        <div class="bottom-nav-head">
+          <strong>다른 성과 둘러보기</strong>
+          <a href="projects.html">← 전체 성과 목록</a>
+        </div>
+        <div class="bottom-nav-list">
+          <a href="robot.html">사족보행 로봇</a>
+          <a href="automation.html">설비 자동제어</a>
+          <a href="fire-monitoring.html">옥외 화재 감시</a>
+          <a href="network.html" aria-current="page">네트워크 관리 시스템</a>
+          <a href="streetlight.html">가로등 고장 감시</a>
+          <a href="torch.html">횃불 감시</a>
+          <a href="access.html">출입감시</a>
+          <a href="inspection-server.html">로봇 시설물 점검 서버</a>
+        </div>
+      </nav>
     </article>
   </main>
   <footer><div class="wrap">2026년 미래시설 TF 성과 전시회</div></footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

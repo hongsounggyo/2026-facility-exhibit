@@ -17,7 +17,7 @@
     <article id="streetlight" aria-labelledby="streetlight-title">
       <p class="label">전기 · 안전</p>
       <h2 id="streetlight-title">가로등 전기시설<br>고장 감시 시스템</h2>
-      <p class="summary">공원 가로등 회로마다 전력량계를 연결해 전압·전류·전력을 실시간으로 측정하고, 지도 위에서 회로별 상태를 확인하는 시스템을 만들었습니다. 램프가 일부 꺼지는 등의 이상을 순찰 전에 알 수 있습니다.</p>
+      <p class="summary">공원 가로등 회로마다 전력량계를 연결해 전압·전류·전력을 실시간으로 측정하고, 지도 위에서 회로별 상태를 확인하는 시스템을 구축했습니다. 야간 순찰에 나가기 전에도 램프 일부 소등이나 안정기 고장 등의 이상을 미리 파악할 수 있습니다.</p>
       <div class="screens single">
         <figure>
           <a href="streetlight.jpg"><img src="streetlight.jpg" alt="공원 지도 위에 가로등 위치와 상태를 표시한 화면과, 회로별 전압·전류·전력 그래프를 보여주는 전력 모니터링 화면" loading="lazy"></a>
@@ -27,27 +27,45 @@
       <dl>
         <div class="step">
           <dt>지도 위에서 회로별 상태 확인</dt>
-          <dd>가로등 위치를 공원 지도에 표시하고, 회로 42개의 상태를 정상 · 주의 · 장애로 나눠 보여줍니다.</dd>
+          <dd>공원 지도에 가로등 위치와 회로 42개의 상태를 정상·주의·장애로 구분해 표시합니다. 전체/상태별 필터링과 구역별 회로 조회를 지원합니다.</dd>
         </div>
         <div class="step">
-          <dt>전압·전류·전력 실시간 측정</dt>
-          <dd>회로별 전력량계로 전압, 전류, 유효전력, 역률, 누적 전력량을 측정해 그래프로 기록합니다.</dd>
+          <dt>전압·전류·전력 실시간 측정(5개 지표)</dt>
+          <dd>회로별 전력량계로 전압(V), 전류(A), 유효전력(W), 역률(PF), 누적 전력량(kWh)을 실시간으로 수집해 시계열 그래프로 기록합니다.</dd>
         </div>
         <div class="step">
           <dt>학습한 기준과 비교해 이상 감지</dt>
-          <dd>회로마다 평소 전류 값을 학습해 두고, 전류가 갑자기 줄거나 늘면 램프 일부 꺼짐이나 안정기 고장 가능성을 알람으로 남깁니다.</dd>
+          <dd>회로마다 평소 정상 운전 전류·전력 값을 학습해 두고, 기준 범위를 벗어나 전류가 급감·급증하면 램프 일부 꺼짐이나 안정기 고장 가능성을 알람 로그로 남깁니다.</dd>
         </div>
         <div class="step">
-          <dt>점등 시간에 맞춘 감시</dt>
-          <dd>일몰 시각을 기준으로 점등 예정 시간을 계산해, 가로등이 켜져 있어야 할 시간에 맞춰 이상 여부를 판단합니다.</dd>
+          <dt>일몰 시각에 맞춘 점등 감시</dt>
+          <dd>일몰 시각을 기준으로 점등 예정 시간과 남은 시간을 자동 계산해, 가로등이 켜져 있어야 할 시간대에 맞춰 이상 여부를 정확하게 판정합니다.</dd>
         </div>
         <div class="step">
           <dt>이상 시뮬레이션과 데이터 백업</dt>
-          <dd>회로 장애·경고 상황을 미리 시뮬레이션해 알람 동작을 확인할 수 있고, 현황 데이터는 CSV·GPX로 백업합니다.</dd>
+          <dd>회로 장애·경고 상황을 미리 시뮬레이션해 알람 동작과 지도 표시를 검증할 수 있으며, 현황 및 위치 데이터는 CSV·GPX 형식으로 백업할 수 있습니다.</dd>
         </div>
       </dl>
+
+      <nav class="bottom-nav" aria-label="다른 성과 보기">
+        <div class="bottom-nav-head">
+          <strong>다른 성과 둘러보기</strong>
+          <a href="projects.html">← 전체 성과 목록</a>
+        </div>
+        <div class="bottom-nav-list">
+          <a href="robot.html">사족보행 로봇</a>
+          <a href="automation.html">설비 자동제어</a>
+          <a href="fire-monitoring.html">옥외 화재 감시</a>
+          <a href="network.html">네트워크 관리 시스템</a>
+          <a href="streetlight.html" aria-current="page">가로등 고장 감시</a>
+          <a href="torch.html">횃불 감시</a>
+          <a href="access.html">출입감시</a>
+          <a href="inspection-server.html">로봇 시설물 점검 서버</a>
+        </div>
+      </nav>
     </article>
   </main>
   <footer><div class="wrap">2026년 미래시설 TF 성과 전시회</div></footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

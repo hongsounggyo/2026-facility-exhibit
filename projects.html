@@ -7,20 +7,93 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="detail-header"><div class="wrap"><nav class="top-menu" aria-label="전시 메뉴"><a href="index.html">전시 개요</a><a href="projects.html" aria-current="page">성과</a></nav></div></header>
+  <header class="detail-header">
+    <div class="wrap masthead">
+      <a href="index.html">2026년 미래시설 TF 성과 전시회</a>
+      <nav class="top-menu" aria-label="전시 메뉴">
+        <a href="index.html">전시 개요</a>
+        <a href="projects.html" aria-current="page">성과</a>
+      </nav>
+    </div>
+  </header>
   <main class="wrap">
     <h1 class="results-title">성과</h1>
+    <p class="results-desc">미래시설 TF에서 현장에 맞춰 직접 기획·구현한 8개 과제입니다. 카드를 누르면 상세 화면과 주요 기능을 볼 수 있습니다.</p>
     <nav id="projects" class="project-nav" aria-label="전시 프로젝트">
-      <a href="robot.html">사족보행 로봇</a>
-      <a href="automation.html">설비 자동제어</a>
-      <a href="fire-monitoring.html">옥외 화재 감시</a>
-      <a href="network.html">네트워크 관리 시스템</a>
-      <a href="streetlight.html">가로등 전기시설 고장 감시 시스템</a>
-      <a href="torch.html">횃불 감시 시스템</a>
-      <a href="access.html">출입감시 시스템</a>
-      <a href="inspection-server.html">로봇 시설물 점검 서버</a>
+      <a class="project-card" href="robot.html">
+        <div class="project-card-top">
+          <span class="badge">피지컬 AI</span>
+          <span class="card-title">사족보행 로봇을 활용한 시설물 순찰·점검</span>
+          <p class="card-summary">바퀴형 사족보행 로봇(M20 Pro) 순찰 시험 및 공간 지도·열화상·가스 센서 실시간 관제 대시보드 구축</p>
+          <p class="card-owner">담당 · 모빌리온 이진식 대표</p>
+        </div>
+        <span class="card-arrow">자세히 보기 →</span>
+      </a>
+      <a class="project-card" href="automation.html">
+        <div class="project-card-top">
+          <span class="badge">에너지 · 자동제어</span>
+          <span class="card-title">설비 자동제어 시스템 자체 구현</span>
+          <p class="card-summary">급탕(HX-3)·난방(HX-2)·FCU 제어를 자체 시스템으로 전환해 운전 데이터 수집과 소스코드 내재화 달성</p>
+        </div>
+        <span class="card-arrow">자세히 보기 →</span>
+      </a>
+      <a class="project-card" href="fire-monitoring.html">
+        <div class="project-card-top">
+          <span class="badge">안전</span>
+          <span class="card-title">옥외 소방시설 화재 경보 시스템 구축</span>
+          <p class="card-summary">11개 편익시설 소방 감시 전용화, 3D 도면 경보 위치 표시 및 주변 CCTV 연동으로 초기 대응 지원</p>
+          <p class="card-owner">담당 · 오형선 주임</p>
+        </div>
+        <span class="card-arrow">자세히 보기 →</span>
+      </a>
+      <a class="project-card" href="network.html">
+        <div class="project-card-top">
+          <span class="badge">인프라</span>
+          <span class="card-title">네트워크 관리 시스템(NMS) 자체 개발</span>
+          <p class="card-summary">올림픽공원 광통신망 장비 304대의 도면 위치·토폴로지·SNMP 포트 상태를 실시간 관리</p>
+          <p class="card-owner">담당 · 오형선 주임</p>
+        </div>
+        <span class="card-arrow">자세히 보기 →</span>
+      </a>
+      <a class="project-card" href="streetlight.html">
+        <div class="project-card-top">
+          <span class="badge">전기 · 안전</span>
+          <span class="card-title">가로등 전기시설 고장 감시 시스템</span>
+          <p class="card-summary">가로등 회로 42개의 전압·전류·전력을 계측하고 평소 전류 학습값과 비교해 램프·안정기 이상 감지</p>
+          <p class="card-owner">담당 · 정지훈, 임선웅</p>
+        </div>
+        <span class="card-arrow">자세히 보기 →</span>
+      </a>
+      <a class="project-card" href="torch.html">
+        <div class="project-card-top">
+          <span class="badge">안전</span>
+          <span class="card-title">횃불 감시 시스템</span>
+          <p class="card-summary">평화의 광장 횃불 불꽃지수와 AI 이중 판정 및 해 고도 기반 주야간 보정으로 24시간 점화 감시</p>
+          <p class="card-owner">담당 · 권신혁 대리</p>
+        </div>
+        <span class="card-arrow">자세히 보기 →</span>
+      </a>
+      <a class="project-card" href="access.html">
+        <div class="project-card-top">
+          <span class="badge">안전</span>
+          <span class="card-title">출입감시 시스템</span>
+          <p class="card-summary">중앙공급실 4개 구역 CCTV에 AI 사람 감지와 금지·주의구역 및 주야간 전환 경보 적용</p>
+          <p class="card-owner">담당 · 권신혁 대리</p>
+        </div>
+        <span class="card-arrow">자세히 보기 →</span>
+      </a>
+      <a class="project-card" href="inspection-server.html">
+        <div class="project-card-top">
+          <span class="badge">피지컬 AI</span>
+          <span class="card-title">로봇 시설물 점검 서버</span>
+          <p class="card-summary">로봇 카메라와 고정형 CCTV·환경 센서를 통합하고 현장 PC 로컬 AI로 시설물 이상을 판정·기록</p>
+          <p class="card-owner">담당 · 권신혁 대리</p>
+        </div>
+        <span class="card-arrow">자세히 보기 →</span>
+      </a>
     </nav>
   </main>
   <footer><div class="wrap">2026년 미래시설 TF 성과 전시회</div></footer>
+  <script src="site.js" defer></script>
 </body>
 </html>
