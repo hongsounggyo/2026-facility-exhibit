@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>가로등 전기시설 고장 감시 시스템 · 2026년 미래시설 TF 성과 전시회</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="detail-header">
+    <div class="wrap masthead">
+      <a href="index.html">2026년 미래시설 TF 성과 전시회</a>
+      <a href="projects.html">← 성과 목록</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article id="streetlight" aria-labelledby="streetlight-title">
+      <p class="label">전기 · 안전</p>
+      <h2 id="streetlight-title">가로등 전기시설<br>고장 감시 시스템</h2>
+      <p class="summary">공원 가로등 회로마다 전력량계를 연결해 전압·전류·전력을 실시간으로 측정하고, 지도 위에서 회로별 상태를 확인하는 시스템을 만들었습니다. 램프가 일부 꺼지는 등의 이상을 순찰 전에 알 수 있습니다.</p>
+      <div class="screens single">
+        <figure>
+          <a href="streetlight.jpg"><img src="streetlight.jpg" alt="공원 지도 위에 가로등 위치와 상태를 표시한 화면과, 회로별 전압·전류·전력 그래프를 보여주는 전력 모니터링 화면" loading="lazy"></a>
+          <figcaption>가로등 회로 지도(왼쪽)와 회로별 전력 모니터링(오른쪽)</figcaption>
+        </figure>
+      </div>
+      <dl>
+        <div class="step">
+          <dt>지도 위에서 회로별 상태 확인</dt>
+          <dd>가로등 위치를 공원 지도에 표시하고, 회로 42개의 상태를 정상 · 주의 · 장애로 나눠 보여줍니다.</dd>
+        </div>
+        <div class="step">
+          <dt>전압·전류·전력 실시간 측정</dt>
+          <dd>회로별 전력량계로 전압, 전류, 유효전력, 역률, 누적 전력량을 측정해 그래프로 기록합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>학습한 기준과 비교해 이상 감지</dt>
+          <dd>회로마다 평소 전류 값을 학습해 두고, 전류가 갑자기 줄거나 늘면 램프 일부 꺼짐이나 안정기 고장 가능성을 알람으로 남깁니다.</dd>
+        </div>
+        <div class="step">
+          <dt>점등 시간에 맞춘 감시</dt>
+          <dd>일몰 시각을 기준으로 점등 예정 시간을 계산해, 가로등이 켜져 있어야 할 시간에 맞춰 이상 여부를 판단합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>이상 시뮬레이션과 데이터 백업</dt>
+          <dd>회로 장애·경고 상황을 미리 시뮬레이션해 알람 동작을 확인할 수 있고, 현황 데이터는 CSV·GPX로 백업합니다.</dd>
+        </div>
+      </dl>
+    </article>
+  </main>
+  <footer><div class="wrap">2026년 미래시설 TF 성과 전시회</div></footer>
+</body>
+</html>
