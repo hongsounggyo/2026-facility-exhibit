@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>횃불 감시 시스템 · 2026년 미래시설 TF 성과 전시회</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="detail-header">
+    <div class="wrap masthead">
+      <a href="index.html">2026년 미래시설 TF 성과 전시회</a>
+      <a href="projects.html">← 성과 목록</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article id="torch" aria-labelledby="torch-title">
+      <p class="label">안전</p>
+      <h2 id="torch-title">횃불 감시 시스템</h2>
+      <p class="summary">평화의 광장 횃불을 CCTV로 24시간 감시하며, 불꽃이 정상적으로 점화되어 있는지 AI가 자동 판정하는 감시 시스템을 구축했습니다. 불꽃이 꺼지거나 카메라 장애가 발생하면 즉시 경보를 울려 담당자가 신속히 대응할 수 있습니다.</p>
+      <div class="screens single">
+        <figure>
+          <a href="torch.jpg"><img src="torch.jpg" alt="위에서 내려다본 횃불 CCTV 화면에 감시영역을 표시하고, 정상 점화 상태와 불꽃지수·AI 판정 그래프를 보여주는 화면" loading="lazy"></a>
+          <figcaption>평화의 횃불 감시 화면</figcaption>
+        </figure>
+      </div>
+      <dl>
+        <div class="step">
+          <dt>불꽃지수와 AI의 이중 판정</dt>
+          <dd>영상의 색과 밝기로 계산한 불꽃지수(10초 평균)와 비전 AI 판정(10초 평균)을 함께 결합해 정상 점화 여부를 판정합니다. 최근 10분간의 추이 그래프를 통해 상태 변화를 한눈에 확인합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>감시영역 지정</dt>
+          <dd>CCTV 화면에서 횃불 불꽃 영역만 감시영역(ROI)으로 지정하고 필요 시 이동할 수 있어, 주변 행인 움직임이나 그림자에 의한 오탐을 최소화했습니다.</dd>
+        </div>
+        <div class="step">
+          <dt>해 고도 계산 기반 주간·야간 자동 판정</dt>
+          <dd>태양 고도를 실시간으로 계산해 주간과 야간을 자동 구분하고, 일출·일몰 및 주변 조도 변화에 맞춰 판정 기준을 보정합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>꺼짐 경보와 점검 모드</dt>
+          <dd>불꽃이 꺼지거나 영상 수신 장애가 생기면 즉시 경보를 발생시킵니다. 설비 점검 중에는 점검 모드로 전환하고 알림 끄기 기능을 제공해 불필요한 오경보를 방지합니다.</dd>
+        </div>
+      </dl>
+
+      <nav class="bottom-nav" aria-label="다른 성과 보기">
+        <div class="bottom-nav-head">
+          <strong>다른 성과 둘러보기</strong>
+          <a href="projects.html">← 전체 성과 목록</a>
+        </div>
+        <div class="bottom-nav-list">
+          <a href="robot.html">사족보행 로봇</a>
+          <a href="automation.html">설비 자동제어</a>
+          <a href="fire-monitoring.html">옥외 화재 감시</a>
+          <a href="network.html">네트워크 관리 시스템</a>
+          <a href="streetlight.html">가로등 고장 감시</a>
+          <a href="torch.html" aria-current="page">횃불 감시</a>
+          <a href="access.html">출입감시</a>
+          <a href="inspection-server.html">로봇 시설물 점검 서버</a>
+        </div>
+      </nav>
+    </article>
+  </main>
+  <footer><div class="wrap">2026년 미래시설 TF 성과 전시회</div></footer>
+  <script src="site.js" defer></script>
+</body>
+</html>

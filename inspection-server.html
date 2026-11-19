@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>로봇 시설물 점검 서버 · 2026년 미래시설 TF 성과 전시회</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="detail-header">
+    <div class="wrap masthead">
+      <a href="index.html">2026년 미래시설 TF 성과 전시회</a>
+      <a href="projects.html">← 성과 목록</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article id="inspection-server" aria-labelledby="inspection-server-title">
+      <p class="label">피지컬 AI</p>
+      <h2 id="inspection-server-title">로봇 시설물 점검 서버</h2>
+      <p class="summary">사족보행 로봇과 고정형 CCTV가 보내는 영상·환경 센서 데이터를 한곳에 통합해, 현장 로컬 AI가 시설물 상태를 판정하고 점검 이력을 기록하는 점검 관제 서버(QUAD INSPECT)를 구축했습니다. 일상 순찰과 비상 현장 점검을 한 화면에서 운영할 수 있습니다.</p>
+      <div class="screens single">
+        <figure>
+          <a href="inspection-server.jpg"><img src="inspection-server.jpg" alt="로봇 일반·열화상 카메라, 고정형 CCTV 영상, AI 점검 결과, 환경 센서와 최근 점검 기록을 보여주는 점검 관제 화면" loading="lazy"></a>
+          <figcaption>시설물 점검 관제 화면 (QUAD INSPECT)</figcaption>
+        </figure>
+      </div>
+      <dl>
+        <div class="step">
+          <dt>여러 입력을 한 화면에서 통합 확인</dt>
+          <dd>로봇의 일반·열화상 카메라, 고정형 CCTV 영상, 환경 센서, 열화상 온도, 로봇 위치 정보(X·Y·방향)를 실시간으로 수신하며 각 채널의 연결 상태를 함께 모니터링합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>AI 영상 분석과 이전 관측 비교 판정</dt>
+          <dd>비전 언어 모델(VLM)이 영상을 주기적으로 분석해 “설비 상태 정상”처럼 사람이 즉시 이해할 수 있는 점검 문장으로 정리하며, 동일 지점의 이전 관측 결과와 비교해 변화 여부를 살핍니다.</dd>
+        </div>
+        <div class="step">
+          <dt>현장 PC에서 돌아가는 로컬 AI로 보안 확보</dt>
+          <dd>AI 모델(LM Studio 기반 로컬 추론)을 외부 클라우드가 아닌 현장 PC 내부에서 직접 실행해, 주요 시설물 영상과 보안 데이터가 외부로 유출되지 않도록 설계했습니다.</dd>
+        </div>
+        <div class="step">
+          <dt>가스·환경 센서 4종 동시 감시</dt>
+          <dd>일산화탄소(CO), 황화수소(H₂S), 가연성 가스(CH₄), 산소(O₂) 농도를 영상 점검과 함께 기록해 밀폐 공간이나 기계실 점검 시 안전 판단을 지원합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>점검 이력 누적 및 경보 관리</dt>
+          <dd>모든 AI 점검 결과는 시간순 기록과 오늘 요약(수집·주의·위험·변화 건수)으로 축적되며, 주의·위험 판정 항목은 진행 중인 경보 영역에 별도 표시해 후속 조치를 돕습니다.</dd>
+        </div>
+      </dl>
+
+      <nav class="bottom-nav" aria-label="다른 성과 보기">
+        <div class="bottom-nav-head">
+          <strong>다른 성과 둘러보기</strong>
+          <a href="projects.html">← 전체 성과 목록</a>
+        </div>
+        <div class="bottom-nav-list">
+          <a href="robot.html">사족보행 로봇</a>
+          <a href="automation.html">설비 자동제어</a>
+          <a href="fire-monitoring.html">옥외 화재 감시</a>
+          <a href="network.html">네트워크 관리 시스템</a>
+          <a href="streetlight.html">가로등 고장 감시</a>
+          <a href="torch.html">횃불 감시</a>
+          <a href="access.html">출입감시</a>
+          <a href="inspection-server.html" aria-current="page">로봇 시설물 점검 서버</a>
+        </div>
+      </nav>
+    </article>
+  </main>
+  <footer><div class="wrap">2026년 미래시설 TF 성과 전시회</div></footer>
+  <script src="site.js" defer></script>
+</body>
+</html>
