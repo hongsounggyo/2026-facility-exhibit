@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>테니스장 급탕·난방 자동제어 운영 도우미 챗봇 · 2026년 미래시설 TF 성과 전시회</title>
+  <meta name="description" content="운전 기록으로 질문에 답하고 일일·주간 운전 일지를 자동 작성하는 사내 로컬 AI 운영 도우미">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="2026년 미래시설 TF 성과 전시회">
+  <meta property="og:title" content="테니스장 급탕·난방 자동제어 운영 도우미 챗봇 · 2026년 미래시설 TF 성과 전시회">
+  <meta property="og:description" content="운전 기록으로 질문에 답하고 일일·주간 운전 일지를 자동 작성하는 사내 로컬 AI 운영 도우미">
+  <meta property="og:url" content="https://www.ksponco.net/automation-chatbot.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="detail-header">
+    <div class="wrap masthead">
+      <a href="index.html">2026년 미래시설 TF 성과 전시회</a>
+      <a href="projects.html">← 성과 목록</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article id="automation-chatbot" aria-labelledby="automation-chatbot-title">
+      <p class="label">에너지 · 자동제어</p>
+      <h2 id="automation-chatbot-title">테니스장 급탕·난방 자동제어 운영 도우미 챗봇</h2>
+      <p class="meta-line"><span class="pc-chip">PC4</span><span>담당 · 홍성교 차장, 이대권 대리, 오형선 주임</span></p>
+      <p class="summary">테니스장 자동제어 서버의 운전 기록을 읽어 질문에 답하고 일일·주간 운전 일지를 자동으로 쓰는 운영 도우미(OpsAssistant)를 자체 개발했습니다. 이상 여부는 프로그램이 기록으로 판정하고 AI는 그 결과를 문장으로 설명만 하도록 설계해, 데이터에 없는 내용을 지어내지 않습니다.</p>
+      <ul class="stat-row">
+        <li><strong>18개</strong><span>점검 판정 규칙</span></li>
+        <li><strong>약 13초</strong><span>질문 답변 시간</span></li>
+        <li><strong>매일 07:00</strong><span>운전 일지 자동 작성</span></li>
+        <li><strong>3,388만 원</strong><span>SW개발비 절감(부가세 포함)</span></li>
+      </ul>
+      <div class="screens">
+        <figure>
+          <a href="chatbot-qa.jpg"><img src="chatbot-qa.jpg" alt="질문 답변 — 왼쪽 AI 답변, 오른쪽 근거 수치" loading="lazy"></a>
+          <figcaption>질문 답변 — 왼쪽 AI 답변, 오른쪽 근거 수치</figcaption>
+        </figure>
+        <figure>
+          <a href="chatbot-journal.jpg"><img src="chatbot-journal.jpg" alt="주간 운전 일지 — 점검 요청·이전 기간 비교 자동 작성" loading="lazy"></a>
+          <figcaption>주간 운전 일지 — 점검 요청·이전 기간 비교 자동 작성</figcaption>
+        </figure>
+      </div>
+      <dl>
+        <div class="step">
+          <dt>운전 기록으로 답하는 질문</dt>
+          <dd>「오늘 운전 요약」, 「이번 주 점검할 것 있어?」 같은 질문의 기간을 해석해 운전 기록과 통신 기록을 계산하고, 답변 옆에 근거 수치를 함께 보여 줍니다.</dd>
+        </div>
+        <div class="step">
+          <dt>18개 규칙 자동 점검 판정</dt>
+          <dd>긴급 3개, 점검 8개, 주의 6개, 참고 1개 규칙으로 급탕 공급 온도 과열, 목표온도 유지율 저하, 센서 값 튐·멈춤, 통신 끊김 등을 판정합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>일일·주간 운전 일지 자동 작성</dt>
+          <dd>매일 07:00 일지를, 월요일에는 주간 일지를 씁니다. 실제 기록으로 시험한 주간 일지에서 급탕 밸브 왕복이 늘어난 것을 스스로 짚어 냈습니다.</dd>
+        </div>
+        <div class="step">
+          <dt>사내 로컬 LLM으로 보안 확보</dt>
+          <dd>사내 AI 서버(DGX Spark)의 로컬 LLM에 요약 수치만 전달해, 운전 기록이 외부로 나가지 않습니다.</dd>
+        </div>
+        <div class="step">
+          <dt>읽기 전용으로 안전하게</dt>
+          <dd>서버 프로그램·PLC·설비에 아무것도 쓰지 않아 도우미가 꺼지거나 오류가 나도 급탕·난방 제어에는 영향이 없습니다. AI가 응답하지 않으면 수치 요약만 저장하고 30분마다 다시 시도합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>자동제어 시스템과 연계</dt>
+          <dd>운전 기록은 <a href="automation.html">테니스장 급탕·난방 자동제어 프로그램</a>이 쌓은 49개 항목 기록을 그대로 읽습니다.</dd>
+        </div>
+      </dl>
+      <div class="screens single">
+        <figure>
+          <a href="chatbot-flow.png"><img src="chatbot-flow.png" alt="운영 도우미 처리 흐름 — 요청부터 결과까지 6단계" loading="lazy"></a>
+          <figcaption>운영 도우미 처리 흐름 — 요청부터 결과까지 6단계</figcaption>
+        </figure>
+      </div>
+      <dl>
+      </dl>
+
+      <nav class="bottom-nav" aria-label="다른 성과 보기">
+        <div class="bottom-nav-head">
+          <strong>다른 성과 둘러보기</strong>
+          <a href="projects.html">← 전체 성과 목록</a>
+        </div>
+        <div class="bottom-nav-list">
+          <a href="fire-monitoring.html"><span class="nav-pc">PC1</span> 화재 원격감시</a>
+          <a href="network.html"><span class="nav-pc">PC1</span> 광통신망 통합관리(NMS)</a>
+          <a href="solar.html"><span class="nav-pc">PC2</span> 태양광 인버터 모니터링</a>
+          <a href="maintenance-report.html"><span class="nav-pc">PC3</span> 개선실적 자동화</a>
+          <a href="duty-roster.html"><span class="nav-pc">PC3</span> 전기 당직표 자동 편성</a>
+          <a href="automation.html"><span class="nav-pc">PC4</span> 급탕·난방 자동제어</a>
+          <a href="automation-chatbot.html" aria-current="page"><span class="nav-pc">PC4</span> 자동제어 운영 도우미 챗봇</a>
+          <a href="streetlight.html"><span class="nav-pc">PC5</span> 가로등 원격 감시</a>
+          <a href="electrical.html"><span class="nav-pc">PC6</span> 옥내외 전기시설 감시</a>
+          <a href="access.html"><span class="nav-pc">PC6</span> 중앙공급실 경비 감시</a>
+          <a href="torch.html"><span class="nav-pc">PC6</span> 평화의 광장 감시</a>
+          <a href="robot.html"><span class="nav-pc">PC7</span> 로봇 점검 대시보드</a>
+          <a href="inspection-server.html"><span class="nav-pc">PC7</span> 시설물 점검 대시보드</a>
+        </div>
+      </nav>
+    </article>
+  </main>
+  <footer><div class="wrap">2026년 미래시설 TF 성과 전시회</div></footer>
+  <script src="site.js" defer></script>
+</body>
+</html>

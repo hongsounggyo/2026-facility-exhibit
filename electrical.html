@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>옥내외 전기시설 감시 프로그램 구축 · 2026년 미래시설 TF 성과 전시회</title>
+  <meta name="description" content="전기시설 CCTV 18대에 화재·연기·침수·영상 이상·침입 감지와 로컬 AI 2차 확인 적용">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="2026년 미래시설 TF 성과 전시회">
+  <meta property="og:title" content="옥내외 전기시설 감시 프로그램 구축 · 2026년 미래시설 TF 성과 전시회">
+  <meta property="og:description" content="전기시설 CCTV 18대에 화재·연기·침수·영상 이상·침입 감지와 로컬 AI 2차 확인 적용">
+  <meta property="og:url" content="https://www.ksponco.net/electrical.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="detail-header">
+    <div class="wrap masthead">
+      <a href="index.html">2026년 미래시설 TF 성과 전시회</a>
+      <a href="projects.html">← 성과 목록</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <article id="electrical" aria-labelledby="electrical-title">
+      <p class="label">인프라 · 전기</p>
+      <h2 id="electrical-title">옥내외 전기시설 감시 프로그램 구축</h2>
+      <p class="meta-line"><span class="pc-chip">PC6</span><span>담당 · 권신혁 대리</span></p>
+      <p class="summary">녹화만 하던 전기시설 CCTV 18대에 화재·연기·침수·영상 이상·침입 감지를 적용한 전기시설 전용 감시 프로그램을 구축했습니다. 영상 규칙으로 먼저 검출한 뒤 로컬 AI가 평소 화면과 지금 화면을 비교해 한 번 더 확인하며, CCTV 영상은 외부로 나가지 않습니다.</p>
+      <ul class="stat-row">
+        <li><strong>18대</strong><span>전기시설 CCTV 전체 연결</span></li>
+        <li><strong>5종</strong><span>화재·연기·침수·영상 이상·침입</span></li>
+        <li><strong>86건</strong><span>공통 엔진 자동 시험 통과</span></li>
+        <li><strong>2,059만 원</strong><span>SW개발비 절감(부가세 포함)</span></li>
+      </ul>
+      <div class="screens">
+        <figure>
+          <a href="electrical-fire.jpg"><img src="electrical-fire.jpg" alt="화재 감지 — 시험 영상(합성 불꽃)" loading="lazy"></a>
+          <figcaption>화재 감지 — 시험 영상(합성 불꽃)</figcaption>
+        </figure>
+        <figure>
+          <a href="electrical-ai.jpg"><img src="electrical-ai.jpg" alt="AI 2차 확인 — 평소 화면과 지금 화면을 나란히 비교" loading="lazy"></a>
+          <figcaption>AI 2차 확인 — 평소 화면과 지금 화면을 나란히 비교</figcaption>
+        </figure>
+      </div>
+      <dl>
+        <div class="step">
+          <dt>경비·횃불 감시 기술을 전기시설로 확대</dt>
+          <dd>6월 <a href="access.html">중앙공급실 경비 감시</a>, 10월 <a href="torch.html">평화의 광장 감시</a>를 자체 개발하며 확보한 영상 수신·검출·경보 기술을 공통 엔진(CctvMonitor v2.3)으로 묶어 전기시설에 적용했습니다. 세 감시 프로그램이 같은 엔진을 씁니다.</dd>
+        </div>
+        <div class="step">
+          <dt>화재·연기 감지</dt>
+          <dd>불꽃 색이나 배경보다 밝은 점이 같은 자리에서 깜박이는지, 화면 윤곽이 흐려지는지로 1차 검출합니다. 실외 카메라 11대에는 햇빛과 흔들리는 나뭇잎을 빼는 기준을 따로 적용합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>침수 감지</dt>
+          <dd>바닥 구역이 마른 바닥보다 매끈해진 상태가 5분 이어지면 AI가 1분 간격으로 두 번 확인합니다.</dd>
+        </div>
+        <div class="step">
+          <dt>영상 이상·침입 감지</dt>
+          <dd>화면 가림·조명 꺼짐이 30초 이어지면 기록하고 카메라 장애를 표시합니다. 18시부터 08시까지는 금지구역 침입에 경보를 울립니다.</dd>
+        </div>
+        <div class="step">
+          <dt>AI 2차 확인과 오경보 관리</dt>
+          <dd>평소 화면과 지금 화면을 나란히 AI에 보내 평소에 없던 불꽃·연기·물이 있는지 판정합니다. AI가 「아니오」라고 해도 기록은 남기고, 화재 30초·연기 120초 넘게 이어지면 경보를 울립니다.</dd>
+        </div>
+        <div class="step">
+          <dt>현장 시험과 보완</dt>
+          <dd>보완 전 84분 시험에서 낮 시간 실외 카메라의 햇빛·나뭇잎 때문에 오경보 17건이 났고(실내 전기실 0건), 실외 기준을 따로 두는 등 보완한 뒤 14분 시험에서 경보 0건을 확인했습니다.</dd>
+        </div>
+        <div class="step">
+          <dt>향후 계획</dt>
+          <dd>12월 18일까지 경보음 없이 기록만 하는 시범 운영으로 기준을 다듬고, 안전관리자 입회 모의 시험을 거쳐 경보로 전환합니다.</dd>
+        </div>
+      </dl>
+
+      <nav class="bottom-nav" aria-label="다른 성과 보기">
+        <div class="bottom-nav-head">
+          <strong>다른 성과 둘러보기</strong>
+          <a href="projects.html">← 전체 성과 목록</a>
+        </div>
+        <div class="bottom-nav-list">
+          <a href="fire-monitoring.html"><span class="nav-pc">PC1</span> 화재 원격감시</a>
+          <a href="network.html"><span class="nav-pc">PC1</span> 광통신망 통합관리(NMS)</a>
+          <a href="solar.html"><span class="nav-pc">PC2</span> 태양광 인버터 모니터링</a>
+          <a href="maintenance-report.html"><span class="nav-pc">PC3</span> 개선실적 자동화</a>
+          <a href="duty-roster.html"><span class="nav-pc">PC3</span> 전기 당직표 자동 편성</a>
+          <a href="automation.html"><span class="nav-pc">PC4</span> 급탕·난방 자동제어</a>
+          <a href="automation-chatbot.html"><span class="nav-pc">PC4</span> 자동제어 운영 도우미 챗봇</a>
+          <a href="streetlight.html"><span class="nav-pc">PC5</span> 가로등 원격 감시</a>
+          <a href="electrical.html" aria-current="page"><span class="nav-pc">PC6</span> 옥내외 전기시설 감시</a>
+          <a href="access.html"><span class="nav-pc">PC6</span> 중앙공급실 경비 감시</a>
+          <a href="torch.html"><span class="nav-pc">PC6</span> 평화의 광장 감시</a>
+          <a href="robot.html"><span class="nav-pc">PC7</span> 로봇 점검 대시보드</a>
+          <a href="inspection-server.html"><span class="nav-pc">PC7</span> 시설물 점검 대시보드</a>
+        </div>
+      </nav>
+    </article>
+  </main>
+  <footer><div class="wrap">2026년 미래시설 TF 성과 전시회</div></footer>
+  <script src="site.js" defer></script>
+</body>
+</html>
